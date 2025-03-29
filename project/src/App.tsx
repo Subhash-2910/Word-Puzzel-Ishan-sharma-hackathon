@@ -181,7 +181,7 @@ function getRandomPuzzleIndex(): number {
   return Math.floor(Math.random() * puzzles.length);
 }
 
-function createInitialGameState(puzzleIndex: number, currentTimeRemaining: number = 6): GameState {
+function createInitialGameState(puzzleIndex: number, currentTimeRemaining: number = 60): GameState {
   return {
     currentPuzzleIndex: puzzleIndex,
     currentHintIndex: 0,
